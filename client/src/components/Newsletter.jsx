@@ -32,6 +32,12 @@ function Newsletter() {
 
   const isActive = localStorage.getItem("newsletter");
 
+  if (isActive) {
+    setTimeout(() => {
+      localStorage.clear();
+    }, 600000);
+  }
+
   return (
     <>
       {!isActive && active && (
