@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import Footer from "./Footer";
+import Newsletter from "./Newsletter";
 
 function HomeBottom() {
   let data = [
@@ -72,6 +73,7 @@ function HomeBottom() {
             ))}
           </div>
         </div>
+        <Newsletter />
         <Footer />
       </section>
     </>

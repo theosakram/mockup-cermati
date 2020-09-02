@@ -58,6 +58,7 @@
   margin-bottom: 0 !important;
   border-radius: 0 !important;
   position: fixed;
+  top: 0;
   min-width: 100%;
   max-height: 200px;
   z-index: 1;
@@ -122,4 +123,71 @@
 
 .bg-footer {
   background-color: #040325;
+}
+
+.newsletter {
+  position: fixed;
+  background-color: #1982c4;
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.is-half-mobile {
+  margin-left: 15px;
+}
+
+.col-news {
+  z-index: 1;
+  margin-bottom: 95px !important;
+}
+
+.delpos {
+  display: flex;
+  float: right;
+}
+
+.animateDissapear {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+}
+
+@keyframes fadeOut {
+  from {
+    top: 0px;
+    opacity: 1;
+  }
+  to {
+    top: 300px;
+    opacity: 0;
+  }
+}
+
+.animateAppear {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    top: 300px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .toppest {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .toppest {
+    margin-top: 200px;
+  }
 }

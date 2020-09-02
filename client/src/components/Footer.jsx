@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
       <div
-        className="hero-foot bg-footer"
+        className="hero-foot bg-footer bottomest"
         style={{
           paddingTop: 25,
           paddingBottom: 25,

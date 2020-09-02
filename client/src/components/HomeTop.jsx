@@ -1,10 +1,12 @@
 import React from "react";
 import Logo from "../assets/logo.png";
+import Notification from "./Notification";
 
 function HomeTop() {
   return (
     <>
       <section class="hero is-fullheight bg toppest">
+        <Notification />
         <div className="blue-bg"></div>
         <div class="hero-body">
           <img className="logo" src={Logo} alt="Cermati Logo" />
